@@ -2,19 +2,53 @@ service.switchprofilewhenidle
 =============================
 
 
+You want two profiles, one for the kids, one for the parents. The parents profile you want password protected so that your kids won't be able to access movies they are not supposed to see.
 
+You want XBMC to always login with the kids profile. After suspending the system, you want it to resume again also with the kids profile regardless of the profile being used when suspending the system. And finally, should you forget to either suspend or power off the system, you want the system to automatically switch to the kids profile when the system has been idle for x minutes.
 
-Installation and Configuration:
-(instructions based on Confluence skin)
+Here's how you set things up (instructions based on Confluence skin):
 
-    1. Download the zip (https://github.com/leechguy/service.switchprofilewhenidle/releases).
-    2. If you are not logged in into XBMC using the Master user profile, then logout and login as Master user.
+    1. Download the zip:
+       https://github.com/leechguy/service.switchprofilewhenidle/releases
+    2. If you are not logged in into XBMC using the Master user profile, then
+       logout and login as Master user.
     3. Go to Settings->Add-ons and choose 'Install from zip file'.
     4. Lookup the downloaded zip file and press the 'OK'-button.
-    5. Go to Settings->Add-ons->Enabled Add-ons->Services->Switch Profile When Idle Service
+    5. Go to Settings->Add-ons->Enabled Add-ons->Services->Switch Profile When
+       Idle
     6. Press the 'Configure'-button.
     7. Configure the behaviour of the add-on.
+    8. Open the 'Profiles'-menu (a sub menu of the 'System'-menu).
+    9. Select the 'Profiles'-menu and press the 'Add profile...'-button.
+   10. Give the profile a name, e.g. 'Kids', keep everything default and start
+       fresh.
+   11. Press the 'Add profile'-button.
+   12. Give the profile a name, e.g. 'Parents' and press the 'Lock preferences'-
+       button.
+   13. You will be asked if you want to set the master lock, press the 'Yes'-
+       button.
+   14. Set your master lock code.
+   15. Press the 'Profile lock'-button and setup the profile lock code.
+   16. Return to the 'Profiles'-menu.
+   17. On the left menu, select 'Login'.
+   18. Press the 'Auto login'-button and select the 'Kids'-profile.
+   19. Restart XBMC.
+   20. Configure your new 'Kids' and 'Parents' profiles. For example, you may
+       want to lock down the kids profile further so that they cannot change
+       settings, install add-ons, etc.
 
-Note: If you change the auto login user in XBMC, you will need to restart XBMC to make sure that the add-on also picks up ths change.
+
+Notes:
+
+* If you change the auto login user in XBMC or enable/disable the login screen,
+  you will need to restart XBMC to make sure that the add-on also picks up this
+  change.
+* If you have enabled the login screen then the add-on will not switch to any
+  configured Auto login profile. Instead it will simply log out and show the log
+  in screen.
+* If the Auto login profile is set to a profile name, then the add-on will not
+  logout that profile.
+
 
 This add-on is compatible with XBMC 13.x Gotham.
+
