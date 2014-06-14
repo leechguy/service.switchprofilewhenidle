@@ -1,0 +1,20 @@
+service.switchprofilewhenidle
+=============================
+
+
+
+
+Installation and Configuration:
+(instructions based on Confluence skin)
+
+    1. Download the zip (https://github.com/leechguy/service.switchprofilewhenidle/releases).
+    2. If you are not logged in into XBMC using the Master user profile, then logout and login as Master user.
+    3. Go to Settings->Add-ons and choose 'Install from zip file'.
+    4. Lookup the downloaded zip file and press the 'OK'-button.
+    5. Go to Settings->Add-ons->Enabled Add-ons->Services->Switch Profile When Idle Service
+    6. Press the 'Configure'-button.
+    7. Configure the behaviour of the add-on.
+
+Note: If you change the auto login user in XBMC, you will need to restart XBMC to make sure that the add-on also picks up ths change.
+
+This add-on is compatible with XBMC 13.x Gotham.

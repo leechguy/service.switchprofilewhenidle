@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<settings>
+    <category id="general" label="30000">
+        <setting id="isMasterUser" type="bool"                                     visible="false" default="false" />
+        <setting type="lsep" label="30001"                                         visible="eq(-1,false)" />
+        <setting type="sep"                                                        visible="eq(-2,true)" />
+        <setting id="useIdleTimer" type="bool" label="30002"                       visible="eq(-3,true)" default="true" />
+        <setting id="maxIdleTime" type="slider" label="30003" enable="eq(-1,true)" visible="eq(-4,true)" range="1,60" default="5" option="int" subsetting="true" />
+        <setting type="sep"                                                        visible="eq(-5,true)" />
+        <setting id="useResumeWatchdog" type="bool" label="30004"                  visible="eq(-6,true)" default="true" />
+        <setting type="sep"                                                        visible="eq(-7,true)" />
+    </category>
+</settings>

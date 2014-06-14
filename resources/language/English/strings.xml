@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<strings>
+    <!-- Plugin settings -->
+    <string id="30000">General</string>
+    <string id="30001">This addon must be configured using the Master user profile.</string>
+    <string id="30002">Automatically switch to default profile / logoff when idle</string>
+    <string id="30003">Idle timeout (in minutes)</string>
+    <string id="30004">After resuming switch to default profile / logoff</string>
+</strings>
